@@ -1,4 +1,4 @@
-user_input = input("Which string do you want to convert? ")
+user_input = input("Which string do you want to convert? ").upper()
 
 morse_code_dict = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
@@ -8,3 +8,9 @@ morse_code_dict = {
     '0': '-----', '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.'
 }
 
+final_code = []
+
+for letter in user_input:
+    final_code.append(morse_code_dict[letter])
+    
+print(final_code)
