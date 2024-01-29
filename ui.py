@@ -6,6 +6,7 @@ class UI():
         self.window.title("Morse Code Converter")
         self.window.geometry("200x200")
         
+        self.text = tk.Label(self.window, text="Convert text to Morse Code!").grid(column=0, row=0)
         
         self.string_entry = tk.Entry(self.window).grid(column=0, row=1)
         
