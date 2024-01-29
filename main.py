@@ -15,3 +15,4 @@ morse_code_dict = {
 final_code = [morse_code_dict[letter] for letter in user_input]
 
 print(*final_code)
+

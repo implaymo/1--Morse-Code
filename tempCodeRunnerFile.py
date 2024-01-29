@@ -1,0 +1,1 @@
+self.Label(self.window, text="Morse Code!").grid(column=0, row=0)
