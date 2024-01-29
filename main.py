@@ -1,4 +1,4 @@
-user_input = input("Which string do you want to convert? ").upper()
+from ui import UI
 
 morse_code_dict = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
@@ -12,7 +12,4 @@ morse_code_dict = {
     '$': '...-..-', '@': '.--.-.', ' ': ' '
 }
 
-final_code = [morse_code_dict[letter] for letter in user_input]
-
-print(*final_code)
-
+app = UI(morse_code_dict)
